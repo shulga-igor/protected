@@ -272,6 +272,7 @@
         position: relative;
         select {
             appearance: none;
+            background: #fff;
         }
         &:after {
             content: '';
@@ -281,6 +282,9 @@
             border-left: 7px solid transparent;
             border-right: 7px solid transparent;
             border-top: 7px solid #0d8ba9;
+            @media screen and (max-width: 767px){
+                top: 20px;
+            }
         }
     }
 }
