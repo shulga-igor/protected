@@ -357,6 +357,12 @@ body{
   cursor: pointer;
   border-bottom: 4px solid #ea7700;
   border-radius: 8px;
+  @media screen and (max-width: 767px){
+    padding: 6px 5px;
+  }
+  @media screen and (max-width: 420px){
+    max-width: 100%;
+}
   &:focus{
     outline: none;
   }
@@ -381,6 +387,12 @@ body{
         right: 20px;
         top: 15px;
         transition: all linear .2s;
+        @media screen and (max-width: 767px){
+          background-size: contain;
+          width: 15px;
+          height: 31px;
+        }
+        
     }
   }
   

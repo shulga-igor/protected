@@ -46,6 +46,30 @@
       
       
     }
+
+
+    modal();
+    function modal(){
+      let link = $('.modal-link');
+      let close = $('.modal__header .close');
+      let linkId = '';
+      
+      link.on('click', function(e){
+        e.preventDefault();
+        linkId = $(this).attr('href');
+        
+        $(linkId).attr('data-visible', 'true');
+      })
+
+      close.on('click', function(e){
+        e.preventDefault();
+        if(linkId != ''){
+          $(linkId).attr('data-visible', 'false');
+        }
+        
+      })
+
+    }
    
  
 })

@@ -6,6 +6,9 @@
         @include inner;
         overflow: hidden;
         padding: 40px 0;
+        @media screen and (max-width: 767px){
+            padding: 20px 0;
+        }
     }
     &-wrap {
         display: flex;
@@ -20,6 +23,9 @@
         &-header{
             text-align: center;
             margin-bottom: 35px;
+            @media screen and (max-width: 767px){
+                margin-bottom: 15px;
+            }
         }
     }
     
@@ -29,28 +35,48 @@
         margin: 0;
         margin-bottom: 10px;
         font-weight: 900;
+        @media screen and (max-width: 767px){
+            font-size: 18px;
+        }
     }
 
     .sub-title {
         font-size: 24px;
         color: $base-white;
         margin: 0;
+        @media screen and (max-width: 767px){
+            font-size: 14px;
+        }
     }
 
     .row{
         display: flex;
-        margin: 0 -15px 25px; 
+        margin: 0 -15px 25px;
+        @media screen and (max-width: 767px){
+            flex-direction: column;
+            margin: 0 0 15px;
+        }
         &-item{
             margin: 0 15px;
             width: 100%;
+            @media screen and (max-width: 767px){
+                margin: 0 0 10px;
+            }
             &.center {
                 max-width: 500px;
                 margin: 0 auto;
+                @media screen and (max-width: 767px){
+                    max-width: 100%;
+                }
             }
             .label{
                 font-size: 22px;
                 color: #fff;
                 margin-bottom: 15px;
+                @media screen and (max-width: 767px){
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                }
             }
         }
     }
@@ -63,11 +89,19 @@
         padding: 13px 20px 16px;
         font-size: 20px;
         color: #515151;
+        @media screen and (max-width: 767px){
+            font-size: 16px;
+            height: 45px;
+            padding: 8px 20px;
+        }
         &:focus {
             outline: none;
         }
         &.big-input{
             max-width: 500px;
+            @media screen and (max-width: 767px){
+                max-width: 100%;
+            }
         }
     }
 
@@ -79,6 +113,9 @@
             width: 100%;
             max-width: 150px;
             margin: 0 20px 0 0;
+            @media screen and (max-width: 767px){
+                max-width: 120px;
+            }
             input{
                 top: 0;
                 left: 0;
@@ -102,6 +139,13 @@
                 background: #008c9f;
                 cursor: pointer;
                 border: 2px solid #008c9f;
+                @media screen and (max-width: 767px){
+                    max-width: 120px;
+                    font-size: 18px;
+                    padding: 7px 10px;
+                }
+
+                
             }
         }
 
@@ -128,6 +172,10 @@
                 padding: 16px 10px;
                 cursor: pointer;
                 margin: 0 5%;
+                @media screen and (max-width: 767px){
+                    margin: 0 2%;
+                    max-width: 100px;
+                }
                 &:hover {
                     .icon {
                         svg {
@@ -144,6 +192,9 @@
                         width: auto;
                         height: 85px;
                         transition: all linear .2s;
+                        @media screen and (max-width: 767px){
+                            height: 55px;
+                        }
                         path{
                             transition: all linear .2s;
                         }
@@ -156,6 +207,10 @@
                     font-weight: 600;
                     display: inline-block;
                     margin-top: 18px;
+                    @media screen and (max-width: 767px){
+                        font-size: 15px;
+                        margin-top: 10px;
+                    }
                 }
             }
         }
@@ -165,23 +220,31 @@
         display: flex;
         justify-content: center;
         height: 67px;
+        @media screen and (max-width: 767px){
+            height: 58px;
+        }
         &.top-mar {
             margin-top: 40px;
-        }
-        .btn {
-            
+            @media screen and (max-width: 767px){
+                margin-top: 20px;
+            }
         }
     }
 
 
     .help-blc {
         display: flex;
-        align-items: center;
         justify-content: center;
         max-width: 700px;
         margin: 70px auto 0;
+        @media screen and (max-width: 767px){
+            margin-top: 20px;
+        }
         &.min-mar {
             margin-top: 40px;
+            @media screen and (max-width: 767px){
+                margin-top: 20px;
+            }
         }
 
         .icon {
@@ -199,6 +262,9 @@
             font-size: 16px;
             color: $base-white;
             font-weight: 600;
+            @media screen and (max-width: 767px){
+                font-size: 14px;
+            }
         }
     }
 
