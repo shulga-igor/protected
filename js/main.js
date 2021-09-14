@@ -25,6 +25,7 @@
       prevStep++;
       slide(prevStep);
       headerSteps(prevStep);
+      $("html, body").animate({ scrollTop: 0 }, 200);
       addaptiveHeight(prevStep);
 
     })
